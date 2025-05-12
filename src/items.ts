@@ -6,8 +6,11 @@ export enum ItemStatus {
 }
 
 export interface Item {
+  id: string;
   task: string;
-  status: ItemStatus; // Use the enum type here
+  status: ItemStatus;
+  completed?: boolean;
+  createdAt?: string;
 }
 
 export let items: Item[] = [];
