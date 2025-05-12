@@ -11,6 +11,7 @@ export interface Item {
   status: ItemStatus;
   completed?: boolean;
   createdAt?: string;
+  lastUpdateAt?: string;
 }
 
 export let items: Item[] = [];
